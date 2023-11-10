@@ -4,7 +4,7 @@
 /*Codigos HTML de la paleta de colores
 Rojo fuerte: #EC1C24
 Rojo oscuro: #99090D
-Blanco: #CECDBF
+Blanco: #FAFAFA
 Negro: #000000
 Azul: #002554*/
 
@@ -13,11 +13,11 @@ a {
   text-decoration: none;
 }
 
-body {
+.body {
   margin: 0;
-  background-color: #cecdbf;
-  background-size: cover;
+  background-color: #fafafa;
   font-family: "Inter", sans-serif; /*Para usar la font en toda la pagina*/
+  display: grid;
 }
 
 /*Estilo del header y el nav, no quedó del todo bien bien pero es funcional*/
@@ -27,11 +27,12 @@ body {
   padding-bottom: 25px;
   /*Para que el header se desplace con el usuario*/
   position: sticky;
+  z-index: 1;
   top: 0;
 }
 
 .logo {
-  margin: 5px 0px 0px 15px;
+  margin: 0.8%;
   float: left;
   background-color: white;
   border-radius: 38px;
@@ -42,13 +43,14 @@ body {
   border: #191716 3px solid;
   display: inline-block;
   margin-top: 20px;
+  padding: 1%;
+  margin: 1%;
 }
 
 .aNavStyle {
-  color: #cecdbf;
-  padding: 15px;
-  margin: 5px;
+  padding: 15px 20px 15px 20px;
   font-weight: bold;
+  color: #cecdbf;
 }
 
 .commonLi {
@@ -58,6 +60,10 @@ body {
 
 /*Algunas class más específicas para retocar y detallar el estilo en algunas
 partes del body*/
+.main {
+  margin-top: 2%;
+  display: flexbox;
+}
 .basicH1 {
   color: #000000;
   text-align: center;
@@ -92,18 +98,21 @@ partes del body*/
   font-size: 20px;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-content: space-around;
-  margin-top: 40px;
+.mapa {
+  margin: 1%;
+}
+
+.estiloCarrusel {
+  padding: 5%;
+  position: relative;
+  z-index: 0;
 }
 
 .multimedia {
-  height: 500px;
-  width: auto;
-  margin-bottom: 60px;
+  max-width: 100%;
+  height: 60vh;
+  object-fit: fill;
+  border-radius: 1rem;
 }
 
 .formStyle {
