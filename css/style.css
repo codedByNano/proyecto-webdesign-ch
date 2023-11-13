@@ -48,7 +48,7 @@ a {
 }
 
 .aNavStyle {
-  padding: 15px 20px 15px 20px;
+  padding: 0rem 2rem 0rem 2rem;
   font-weight: bold;
   color: #cecdbf;
 }
@@ -62,7 +62,6 @@ a {
 partes del body*/
 .main {
   margin-top: 2%;
-  display: flexbox;
 }
 .basicH1 {
   color: #000000;
@@ -96,10 +95,6 @@ partes del body*/
   text-align: left;
   margin-left: 70px;
   font-size: 20px;
-}
-
-.mapa {
-  margin: 1%;
 }
 
 .estiloCarrusel {
@@ -143,4 +138,14 @@ partes del body*/
   height: 30px;
   border-radius: 5px;
   margin: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 1166px) {
+  .main {
+    display: grid;
+  }
+
+  .mapa {
+    margin: 0 auto;
+  }
 }
