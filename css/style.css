@@ -45,6 +45,7 @@ a {
   margin-top: 20px;
   padding: 1%;
   margin: 1%;
+  border-radius: 2vh;
 }
 
 .aNavStyle {
@@ -90,13 +91,6 @@ partes del body*/
   font-size: 30px;
 }
 
-.listStyle {
-  color: #000000;
-  text-align: left;
-  margin-left: 70px;
-  font-size: 20px;
-}
-
 .estiloCarrusel {
   padding: 5%;
   position: relative;
@@ -110,16 +104,42 @@ partes del body*/
   border-radius: 1rem;
 }
 
+/* Dándole estilo al form de "sumate.html" */
 .formStyle {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #ec1c24;
-  padding: 20px;
-  border: 1px solid #cecdbf;
+  max-width: 50%;
+  margin: 5vh auto;
+  padding: 30px;
+  background-color: #002554;
+  color: #fafafa;
+  border: 3px solid #cecdbf;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.formItem {
+  width: 85%;
+  border: 2px #000000 solid;
+  margin: 1vh;
+  border-radius: 1vh;
+  transition: border-color 0.3s ease;
+}
+
+.formItem:focus {
+  border-color: #99090D; /* Cambia el color al enfocar el campo */
 }
 
 .button {
+  width: 50%;
   border-radius: 15px;
+  background-color: #ec1c24;
+  color: #fafafa;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #99090D;
 }
 
 /*Acá arranco a trabajar con todo lo que es footer*/
@@ -138,16 +158,6 @@ partes del body*/
   height: 30px;
   border-radius: 5px;
   margin: 0px 20px 0px 20px;
-}
-
-@media screen and (max-width: 1166px) {
-  .main {
-    display: grid;
-  }
-
-  .mapa {
-    margin: 0 auto;
-  }
 }
 
 .tabla {
@@ -174,4 +184,68 @@ partes del body*/
 .col3 {
   width: 2fr;
   border: 2px black solid;
+}
+
+.cardGroup {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+}
+
+.card {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+  border: 3px gray double;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "imagenMuseo cardTitle"
+  "imagenMuseo cardText"
+  ;
+}
+
+.imagenMuseo {
+  max-width: 70%;
+  height: auto;
+  margin: 1vh auto;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+.cardBody {
+  margin: auto;
+  padding: 1vw;
+}
+
+.cardTitle {
+  text-decoration: underline;
+  font-size: 2.5vh;
+}
+
+.cardText {
+  font-size: 1.8vh;
+}
+
+@media screen and (max-width: 1166px) {
+  .main {
+    display: grid;
+  }
+
+  .mapa {
+    margin: auto;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "imagenMuseo"
+    "cardTitle"
+    "cardText"
+    ;
+  }
+
+  .formStyle {
+    max-width: 90%;
+  }
 }
