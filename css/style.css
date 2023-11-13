@@ -149,3 +149,29 @@ partes del body*/
     margin: 0 auto;
   }
 }
+
+.tabla {
+  width: 90%;
+  border: 2px black solid;
+  margin: 3%;
+}
+
+.encabezado {
+  background-color: #002554;
+  color: #fafafa;
+}
+
+.col1 {
+  width: 1fr;
+  border: 2px black solid;
+}
+
+.col2 {
+  width: 1fr;
+  border: 2px black solid;
+}
+
+.col3 {
+  width: 2fr;
+  border: 2px black solid;
+}
