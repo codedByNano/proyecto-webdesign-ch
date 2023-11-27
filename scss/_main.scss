@@ -1,0 +1,43 @@
+.main {
+  margin-top: 2%;
+
+  .basicH1 {
+    color: $negro;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .basicH2 {
+    color: $negro;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .basicP {
+    font-size: 20px;
+    color: $negro;
+    margin: 0px 50px 0px 50px;
+  }
+  .pIndex {
+    text-align: left;
+    float: left;
+    width: 70%;
+  }
+
+  .bigText {
+    font-size: 30px;
+  }
+
+  .estiloCarrusel {
+    padding: 5%;
+    position: relative;
+    z-index: 0;
+  }
+
+  .multimedia {
+    max-width: 100%;
+    height: 60vh;
+    object-fit: fill;
+    border-radius: 1rem;
+  }
+}

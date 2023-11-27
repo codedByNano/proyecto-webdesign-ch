@@ -1,45 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*Para aplicarla es con 'font-family: 'Inter', sans-serif;'*/
-
-/*Codigos HTML de la paleta de colores
-Rojo fuerte: #EC1C24
-Rojo oscuro: #99090D
-Blanco: #FAFAFA
-Negro: #000000
-Azul: #002554*/
-
-/*Reglas genéricas que quiero que se apliquen a todo el documento*/
 a {
   text-decoration: none;
 }
 
 .body {
   margin: 0;
-  background-color: #fafafa;
-  font-family: "Inter", sans-serif; /*Para usar la font en toda la pagina*/
+  background-color: #FAFAFA;
+  font-family: "Inter", sans-serif;
   display: grid;
 }
 
-/*Estilo del header y el nav, no quedó del todo bien bien pero es funcional*/
 .mainHeader {
-  background-color: #ec1c24;
+  background-color: #EC1C24;
   text-align: center;
   padding-bottom: 25px;
-  /*Para que el header se desplace con el usuario*/
   position: sticky;
   z-index: 1;
   top: 0;
 }
-
-.logo {
+.mainHeader .logo {
   margin: 0.8%;
   float: left;
-  background-color: white;
+  background-color: #FAFAFA;
   border-radius: 38px;
 }
-
-.mainNav {
-  background-color: #99090d;
+.mainHeader .mainNav {
+  background-color: #99090D;
   border: #191716 3px solid;
   display: inline-block;
   margin-top: 20px;
@@ -47,143 +34,72 @@ a {
   margin: 1%;
   border-radius: 2vh;
 }
-
-.aNavStyle {
+.mainHeader .aNavStyle {
   padding: 0rem 2rem 0rem 2rem;
   font-weight: bold;
-  color: #cecdbf;
+  color: #FAFAFA;
 }
-
-.commonLi {
+.mainHeader .commonLi {
   display: inline-block;
   margin-right: 20px;
 }
 
-/*Algunas class más específicas para retocar y detallar el estilo en algunas
-partes del body*/
 .main {
   margin-top: 2%;
 }
-.basicH1 {
+.main .basicH1 {
   color: #000000;
   text-align: center;
   text-decoration: underline;
 }
-
-.basicH2 {
+.main .basicH2 {
   color: #000000;
   text-align: left;
   margin-left: 50px;
 }
-
-.basicP {
+.main .basicP {
   font-size: 20px;
   color: #000000;
   margin: 0px 50px 0px 50px;
 }
-.pIndex {
+.main .pIndex {
   text-align: left;
   float: left;
   width: 70%;
 }
-
-.bigText {
+.main .bigText {
   font-size: 30px;
 }
-
-.estiloCarrusel {
+.main .estiloCarrusel {
   padding: 5%;
   position: relative;
   z-index: 0;
 }
-
-.multimedia {
+.main .multimedia {
   max-width: 100%;
   height: 60vh;
   object-fit: fill;
   border-radius: 1rem;
 }
 
-/* Dándole estilo al form de "sumate.html" */
-.formStyle {
-  max-width: 50%;
-  margin: 5vh auto;
-  padding: 30px;
-  background-color: #002554;
-  color: #fafafa;
-  border: 3px solid #cecdbf;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.formItem {
-  width: 85%;
-  border: 2px #000000 solid;
-  margin: 1vh;
-  border-radius: 1vh;
-  transition: border-color 0.3s ease;
-}
-
-.formItem:focus {
-  border-color: #99090D; /* Cambia el color al enfocar el campo */
-}
-
-.button {
-  width: 50%;
-  border-radius: 15px;
-  background-color: #ec1c24;
-  color: #fafafa;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #99090D;
-}
-
-/*Acá arranco a trabajar con todo lo que es footer*/
-.divider {
+footer .divider {
   border-top: 2px solid #000000;
-  width: 85%;
-  margin: 60px 60px 20px 60px;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
 }
-
-.footerUl {
+footer .footerUl {
   text-align: center;
 }
-
-.icon {
+footer .icon {
   width: 30px;
   height: 30px;
   border-radius: 5px;
   margin: 0px 20px 0px 20px;
 }
-
-.tabla {
-  width: 90%;
-  border: 2px black solid;
-  margin: 3%;
-}
-
-.encabezado {
-  background-color: #002554;
-  color: #fafafa;
-}
-
-.col1 {
-  width: 1fr;
-  border: 2px black solid;
-}
-
-.col2 {
-  width: 1fr;
-  border: 2px black solid;
-}
-
-.col3 {
-  width: 2fr;
-  border: 2px black solid;
+footer .footerLi {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .cardGroup {
@@ -191,61 +107,99 @@ partes del body*/
   flex-wrap: wrap;
   margin-top: 5vh;
 }
-
-.card {
+.cardGroup .card {
   width: 80%;
   margin: auto;
   margin-bottom: 1rem;
   border: 3px gray double;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "imagenMuseo cardTitle"
-  "imagenMuseo cardText"
-  ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #002554;
+  display: flex;
+  flex-direction: column;
 }
-
-.imagenMuseo {
-  max-width: 70%;
+.cardGroup .imagenMuseo {
+  max-width: 100%;
   height: auto;
-  margin: 1vh auto;
   border: 2px black solid;
   border-radius: 5px;
 }
-
-.cardBody {
-  margin: auto;
+.cardGroup .cardBody {
+  color: #FAFAFA;
   padding: 1vw;
 }
-
-.cardTitle {
+.cardGroup .cardTitle {
   text-decoration: underline;
   font-size: 2.5vh;
 }
-
-.cardText {
+.cardGroup .cardText {
   font-size: 1.8vh;
+}
+
+.tabla {
+  width: 90%;
+  border: 2px black solid;
+  margin: 3%;
+}
+.tabla .encabezado {
+  background-color: #002554;
+  color: #fafafa;
+}
+.tabla .col1 {
+  width: 1fr;
+  border: 2px black solid;
+}
+.tabla .col2 {
+  width: 1fr;
+  border: 2px black solid;
+}
+.tabla .col3 {
+  width: 2fr;
+  border: 2px black solid;
+}
+
+.formStyle {
+  max-width: 50%;
+  margin: 5vh auto;
+  padding: 30px;
+  background-color: #002554;
+  color: #FAFAFA;
+  border: 3px solid #FAFAFA;
+  border-radius: 10px;
+  text-align: center;
+}
+.formStyle .formItem {
+  width: 85%;
+  border: 2px #000000 solid;
+  margin: 1vh;
+  border-radius: 1vh;
+  transition: border-color 0.3s ease;
+}
+.formStyle .formItem:focus {
+  border-color: #99090D; /* Cambia el color al enfocar el campo */
+}
+.formStyle .button {
+  width: 50%;
+  border-radius: 15px;
+  background-color: #EC1C24;
+  color: #FAFAFA;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.formStyle .button:hover {
+  background-color: #99090D;
 }
 
 @media screen and (max-width: 1166px) {
   .main {
     display: grid;
   }
-
   .mapa {
     margin: auto;
   }
-
-  .card {
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "imagenMuseo"
-    "cardTitle"
-    "cardText"
-    ;
-  }
-
   .formStyle {
     max-width: 90%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

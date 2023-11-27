@@ -1,0 +1,36 @@
+.mainHeader {
+  background-color: $rojo-claro;
+  text-align: center;
+  padding-bottom: 25px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+
+  .logo {
+    margin: 0.8%;
+    float: left;
+    background-color: $blanco;
+    border-radius: 38px;
+  }
+
+  .mainNav {
+    background-color: $rojo-oscuro;
+    border: #191716 3px solid;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 2vh;
+  }
+
+  .aNavStyle {
+    padding: 0rem 2rem 0rem 2rem;
+    font-weight: bold;
+    color: $blanco;
+  }
+
+  .commonLi {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}

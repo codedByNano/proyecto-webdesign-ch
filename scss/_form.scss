@@ -1,0 +1,29 @@
+.formStyle {
+  @include formStyle();
+
+  .formItem {
+    width: 85%;
+    border: 2px #000000 solid;
+    margin: 1vh;
+    border-radius: 1vh;
+    transition: border-color 0.3s ease;
+  }
+
+  .formItem:focus {
+    border-color: $rojo-oscuro; /* Cambia el color al enfocar el campo */
+  }
+
+  .button {
+    width: 50%;
+    border-radius: 15px;
+    background-color: $rojo-claro;
+    color: $blanco;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: $rojo-oscuro;
+  }
+}
