@@ -1,10 +1,13 @@
 @media screen and (max-width: 1166px) {
   .main {
-    display: grid;
-  }
+    .containerMap {
+      display: grid;
 
-  .mapa {
-    margin: auto;
+      .text {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .formStyle {

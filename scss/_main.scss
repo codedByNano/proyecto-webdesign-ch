@@ -1,43 +1,49 @@
 .main {
-  margin-top: 2%;
+  .containerMain {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  .basicH1 {
-    color: $negro;
-    text-align: center;
-    text-decoration: underline;
+    .title {
+      color: $negro;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 1.5%;
+    }
+
+    .subtitle {
+      color: $negro;
+      margin-left: 50px;
+    }
+
+    .basicP {
+      font-size: 20px;
+      color: $negro;
+      margin: 0px 50px;
+    }
   }
 
-  .basicH2 {
-    color: $negro;
-    text-align: left;
-    margin-left: 50px;
-  }
+  .containerMap {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    box-sizing: border-box;
 
-  .basicP {
-    font-size: 20px;
-    color: $negro;
-    margin: 0px 50px 0px 50px;
-  }
-  .pIndex {
-    text-align: left;
-    float: left;
-    width: 70%;
-  }
+    .text {
+      width: 80%;
+      .subtitle {
+        color: $negro;
+        margin-left: 50px;
+      }
 
-  .bigText {
-    font-size: 30px;
-  }
-
-  .estiloCarrusel {
-    padding: 5%;
-    position: relative;
-    z-index: 0;
-  }
-
-  .multimedia {
-    max-width: 100%;
-    height: 60vh;
-    object-fit: fill;
-    border-radius: 1rem;
+      .basicP {
+        font-size: 20px;
+        color: $negro;
+        margin: 0px 50px;
+      }
+    }
   }
 }

@@ -5,10 +5,9 @@ a {
 }
 
 .body {
-  margin: 0;
+  margin: 0px;
   background-color: #FAFAFA;
   font-family: "Inter", sans-serif;
-  display: grid;
 }
 
 .mainHeader {
@@ -44,38 +43,72 @@ a {
   margin-right: 20px;
 }
 
-.main {
-  margin-top: 2%;
+.main .containerMain {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.main .basicH1 {
+.main .containerMain .title {
   color: #000000;
   text-align: center;
   text-decoration: underline;
+  margin-bottom: 1.5%;
 }
-.main .basicH2 {
+.main .containerMain .subtitle {
   color: #000000;
-  text-align: left;
   margin-left: 50px;
 }
-.main .basicP {
+.main .containerMain .basicP {
   font-size: 20px;
   color: #000000;
-  margin: 0px 50px 0px 50px;
+  margin: 0px 50px;
 }
-.main .pIndex {
-  text-align: left;
-  float: left;
-  width: 70%;
+.main .containerMap {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  box-sizing: border-box;
 }
-.main .bigText {
-  font-size: 30px;
+.main .containerMap .text {
+  width: 80%;
 }
-.main .estiloCarrusel {
+.main .containerMap .text .subtitle {
+  color: #000000;
+  margin-left: 50px;
+}
+.main .containerMap .text .basicP {
+  font-size: 20px;
+  color: #000000;
+  margin: 0px 50px;
+}
+
+.side {
+  margin-top: 1%;
+}
+.side .basicH1 {
+  color: #000000;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1.5%;
+}
+.side .basicH2 {
+  color: #000000;
+  margin-left: 50px;
+}
+.side .basicP {
+  font-size: 20px;
+  color: #000000;
+  margin: 0px 50px;
+}
+.side .estiloCarrusel {
   padding: 5%;
   position: relative;
   z-index: 0;
 }
-.main .multimedia {
+.side .multimedia {
   max-width: 100%;
   height: 60vh;
   object-fit: fill;
@@ -85,8 +118,7 @@ a {
 footer .divider {
   border-top: 2px solid #000000;
   width: 95%;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 footer .footerUl {
   text-align: center;
@@ -191,11 +223,12 @@ footer .footerLi {
 }
 
 @media screen and (max-width: 1166px) {
-  .main {
+  .main .containerMap {
     display: grid;
   }
-  .mapa {
-    margin: auto;
+  .main .containerMap .text {
+    width: 100%;
+    margin-bottom: 20px;
   }
   .formStyle {
     max-width: 90%;
