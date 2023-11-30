@@ -3,7 +3,8 @@
 }
 
 @mixin cardStyles() {
-  width: 80%;
+  width: 98%;
+  height: 100%;
   margin: auto;
   margin-bottom: 1rem;
   border: 3px gray double;
@@ -17,6 +18,5 @@
   background-color: $azul;
   color: $blanco;
   border: 3px solid $blanco;
-  border-radius: 10px;
   text-align: center;
 }
