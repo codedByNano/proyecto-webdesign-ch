@@ -42,8 +42,8 @@ a {
 }
 .body .main .containerMain {
   width: 96%;
-  margin: 20px;
-  padding: 15px;
+  margin: 2vh auto;
+  padding: 1vw;
   box-shadow: 0 4px 8px rgb(0, 37, 84);
   transition: transform 0.3s ease;
 }
@@ -67,8 +67,8 @@ a {
 }
 .body .main .containerMap {
   width: 96%;
-  margin: 20px;
-  padding: 15px;
+  margin: 2vh auto;
+  padding: 1vw;
   display: flex;
   box-shadow: 0 4px 8px rgb(0, 37, 84);
   transition: transform 0.3s ease;
@@ -77,7 +77,7 @@ a {
   transform: scale(1.05);
 }
 .body .main .containerMap .text {
-  width: 80%;
+  width: 100%;
 }
 .body .main .containerMap .text .subtitle {
   color: #000000;
@@ -173,8 +173,7 @@ a {
   font-size: 1.8vh;
 }
 .body .side .formStyle {
-  max-width: 50%;
-  margin: 5vh auto;
+  margin: auto;
   padding: 30px;
   background-color: #002554;
   color: #FAFAFA;
@@ -226,16 +225,17 @@ a {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 1166px) {
-  .main .containerMap {
-    display: grid;
+@media screen and (max-width: 991px) {
+  .main .map {
+    display: none;
   }
+}
+@media screen and (min-width: 991px) {
   .main .containerMap .text {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 70%;
   }
   .formStyle {
-    max-width: 90%;
+    width: 50%;
   }
 }
 

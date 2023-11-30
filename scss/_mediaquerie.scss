@@ -1,17 +1,23 @@
-@media screen and (max-width: 1166px) {
+@media screen and (max-width: 991px) {
+
+
+  .main {
+    .map {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
   .main {
     .containerMap {
-      display: grid;
-      
-
       .text {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 70%;
       }
     }
   }
-
+  
   .formStyle {
-    max-width: 90%;
+    width: 50%;
   }
 }

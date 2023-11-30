@@ -47,8 +47,8 @@ a {
   .main {
     .containerMain {
       width: 96%;
-      margin: 20px;
-      padding: 15px;
+      margin: 2vh auto;
+      padding: 1vw;
       box-shadow: 0 4px 8px rgba(0, 37, 84, 1);
       transition: transform 0.3s ease;
 
@@ -77,8 +77,8 @@ a {
 
     .containerMap {
       width: 96%;
-      margin: 20px;
-      padding: 15px;
+      margin: 2vh auto;
+      padding: 1vw;
       display: flex;
       box-shadow: 0 4px 8px rgba(0, 37, 84, 1);
       transition: transform 0.3s ease;
@@ -88,7 +88,7 @@ a {
       }
 
       .text {
-        width: 80%;
+        width: 100%;
         .subtitle {
           color: $negro;
           margin-left: 50px;
